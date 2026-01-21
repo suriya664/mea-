@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshPlate | Pricing</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html">FreshPlate</a>
+        <button class="site-menu-toggle" type="button" data-site-menu-toggle data-target="#site-menu">
+          ☰ Menu
+        </button>
+        <nav class="nav-links" id="site-menu">
+          <a href="index.html">Home</a>
+          <a href="home-recipes.html">Home 2</a>
+          <a href="services.html">Meal Plans</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="dashboard.html">Dashboard</a>
+          <button class="theme-toggle" type="button" data-theme-toggle>Dark Mode</button>
+          <a class="btn btn-outline" href="login.html">Login</a>
+          <a class="btn btn-outline" href="register.html">Register</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Choose your plan</h2>
+        <p class="section-subtitle">
+          Flexible pricing with weekly or monthly billing.
+        </p>
+        <div class="icon-row">
+          <div class="toggle-group" data-pricing-toggle>
+            <button class="active" data-mode="weekly">Weekly</button>
+            <button data-mode="monthly">Monthly</button>
+          </div>
+          <div class="card" style="padding: 12px 16px">
+            Meals per week:
+            <strong data-meal-output>4</strong>
+            <input
+              data-meal-count
+              type="range"
+              min="2"
+              max="6"
+              value="4"
+            />
+          </div>
+        </div>
+
+        <div class="grid grid-3" style="margin-top: 32px">
+          <div class="card">
+            <span class="badge">2-Person</span>
+            <h3>Starter</h3>
+            <p class="muted">Ideal for couples or roommates.</p>
+            <h2 data-price data-weekly="$58/week" data-monthly="$220/month">
+              $58/week
+            </h2>
+            <ul class="muted">
+              <li>2 servings per meal</li>
+              <li>Nutrition tracking</li>
+              <li>Swap anytime</li>
+            </ul>
+            <a class="btn btn-primary" href="register.html">Start Subscription</a>
+          </div>
+          <div class="card" style="border: 2px solid var(--fresh-green)">
+            <span class="badge orange">Best Value</span>
+            <h3>4-Person</h3>
+            <p class="muted">Most popular for families.</p>
+            <h2 data-price data-weekly="$92/week" data-monthly="$360/month">
+              $92/week
+            </h2>
+            <ul class="muted">
+              <li>4 servings per meal</li>
+              <li>Priority delivery window</li>
+              <li>Bonus snacks</li>
+            </ul>
+            <a class="btn btn-secondary" href="register.html"
+              >Start Subscription</a
+            >
+          </div>
+          <div class="card">
+            <span class="badge">Flexible</span>
+            <h3>Mix & Match</h3>
+            <p class="muted">Customize servings each week.</p>
+            <h2 data-price data-weekly="$66/week" data-monthly="$250/month">
+              $66/week
+            </h2>
+            <ul class="muted">
+              <li>Custom servings</li>
+              <li>Skip weeks anytime</li>
+              <li>Dietary filters</li>
+            </ul>
+            <a class="btn btn-primary" href="register.html">Start Subscription</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-columns">
+        <div>
+          <h4>FreshPlate</h4>
+          <p class="muted">Fresh, healthy meal kits delivered weekly.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <p class="muted"><a href="services.html">Meal plans</a></p>
+          <p class="muted"><a href="blog.html">Blog</a></p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <p class="muted"><a href="about.html">About</a></p>
+          <p class="muted"><a href="contact.html">Contact</a></p>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <p class="muted">support@freshplate.com</p>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

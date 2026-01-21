@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshPlate | Recipe Detail</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html">FreshPlate</a>
+        <button class="site-menu-toggle" type="button" data-site-menu-toggle data-target="#site-menu">
+          ☰ Menu
+        </button>
+        <nav class="nav-links" id="site-menu">
+          <a href="index.html">Home</a>
+          <a href="home-recipes.html">Home 2</a>
+          <a href="services.html">Meal Plans</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="dashboard.html">Dashboard</a>
+          <button class="theme-toggle" type="button" data-theme-toggle>Dark Mode</button>
+          <a class="btn btn-outline" href="login.html">Login</a>
+          <a class="btn btn-outline" href="register.html">Register</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero hero-mini">
+      <div class="container hero-content">
+        <div>
+          <span class="badge">Recipe</span>
+          <h1>Green Goddess Grain Bowl</h1>
+          <p class="muted">
+            Creamy avocado dressing, roasted broccoli, and quinoa with a zesty
+            crunch.
+          </p>
+          <div class="icon-row">
+            <span class="pill">Prep: 10 min</span>
+            <span class="pill orange">Cook: 20 min</span>
+            <span class="pill">420 kcal</span>
+          </div>
+        </div>
+        <div class="image-card">
+          <img
+            src="https://images.unsplash.com/photo-1546069901-eacef0df6022?auto=format&fit=crop&w=1200&q=80"
+            alt="Green goddess grain bowl"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-2">
+        <div class="card">
+          <h3>Ingredients</h3>
+          <div class="form-grid" data-checklist>
+            <label><input type="checkbox" /> 1 cup cooked quinoa</label>
+            <label><input type="checkbox" /> 1 avocado</label>
+            <label><input type="checkbox" /> 1 cup broccoli florets</label>
+            <label><input type="checkbox" /> 1 tbsp olive oil</label>
+            <label><input type="checkbox" /> 1 lemon, juiced</label>
+            <label><input type="checkbox" /> 2 tbsp tahini</label>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Nutrition calculator</h3>
+          <form class="calculator" data-calculator>
+            <input class="input" type="number" name="protein" placeholder="Protein (g)" />
+            <input class="input" type="number" name="carbs" placeholder="Carbs (g)" />
+            <input class="input" type="number" name="fats" placeholder="Fats (g)" />
+            <button class="btn btn-primary" type="submit">Calculate</button>
+            <strong data-calculated>-- kcal</strong>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Step-by-step instructions</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <h4>1. Roast the broccoli</h4>
+            <p class="muted">Toss with olive oil, roast at 400°F for 15 min.</p>
+          </div>
+          <div class="card">
+            <h4>2. Blend the dressing</h4>
+            <p class="muted">Blend avocado, tahini, lemon, and herbs.</p>
+          </div>
+          <div class="card">
+            <h4>3. Assemble bowls</h4>
+            <p class="muted">Layer quinoa, broccoli, and veggies.</p>
+          </div>
+          <div class="card">
+            <h4>4. Finish & serve</h4>
+            <p class="muted">Drizzle dressing and add crunchy toppings.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Related recipes</h2>
+        <div class="grid grid-3">
+          <article class="card">
+            <h4>Lemon Herb Salmon</h4>
+            <p class="muted">Protein-packed and fresh.</p>
+          </article>
+          <article class="card">
+            <h4>Thai Peanut Noodles</h4>
+            <p class="muted">Creamy and plant-based.</p>
+          </article>
+          <article class="card">
+            <h4>Chicken Shawarma Bowl</h4>
+            <p class="muted">Spiced with tahini drizzle.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-columns">
+        <div>
+          <h4>FreshPlate</h4>
+          <p class="muted">Fresh meals and smarter cooking.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <p class="muted"><a href="blog.html">Blog</a></p>
+          <p class="muted"><a href="services.html">Meal plans</a></p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <p class="muted"><a href="about.html">About</a></p>
+          <p class="muted"><a href="contact.html">Contact</a></p>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <p class="muted">support@freshplate.com</p>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

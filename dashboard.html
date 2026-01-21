@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshPlate | Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard">
+    <div class="dashboard-layout">
+      <aside class="sidebar" data-menu-panel>
+        <div class="sidebar-header">
+          <span class="logo">FreshPlate</span>
+        </div>
+        <a class="active" href="#overview">Dashboard Overview</a>
+        <a href="#calendar">Meal Selection Calendar</a>
+        <a href="#delivery">Delivery Schedule</a>
+        <a href="#history">Order History</a>
+        <a href="#payment">Payment Methods</a>
+        <a href="#preferences">Dietary Preferences</a>
+        <a href="#profile">Profile Settings</a>
+        <div class="sidebar-section">
+          <span class="muted">Admin Panel</span>
+          <a href="#admin-users">User Management</a>
+          <a href="#admin-reports">Reports</a>
+          <a href="#admin-settings">System Settings</a>
+        </div>
+        <a class="sidebar-logout" href="index.html">Logout</a>
+      </aside>
+      <div class="sidebar-overlay" data-menu-close></div>
+      <main class="dashboard-content">
+        <div class="dashboard-topbar">
+          <button class="hamburger" type="button" data-menu-toggle aria-label="Open menu">
+            ☰
+          </button>
+          <span class="muted">Dashboard</span>
+          <button class="theme-toggle" type="button" data-theme-toggle>Dark Mode</button>
+          <a class="btn btn-outline" href="index.html">Logout</a>
+        </div>
+        <section id="overview" class="card">
+          <h2 class="section-title">Welcome back, Jordan</h2>
+          <p class="muted">
+            Your next box ships on Tuesday. Update meals or delivery times
+            before Monday 6pm.
+          </p>
+          <div class="icon-row">
+            <span class="badge">Box status: Packed</span>
+            <span class="badge orange">Meals selected: 4/4</span>
+          </div>
+        </section>
+
+        <section id="calendar" class="section">
+          <h2 class="section-title">Meal selection calendar</h2>
+          <div class="grid grid-2">
+            <div class="card">
+              <h3>Drag meals into your week</h3>
+              <div class="form-grid">
+                <div class="draggable-meal" draggable="true" data-meal="Lemon Herb Salmon">
+                  Lemon Herb Salmon
+                </div>
+                <div class="draggable-meal" draggable="true" data-meal="Turkey Lettuce Wraps">
+                  Turkey Lettuce Wraps
+                </div>
+                <div class="draggable-meal" draggable="true" data-meal="Pesto Zoodles">
+                  Pesto Zoodles
+                </div>
+                <div class="draggable-meal" draggable="true" data-meal="Chicken Shawarma Bowl">
+                  Chicken Shawarma Bowl
+                </div>
+              </div>
+            </div>
+            <div class="card calendar">
+              <h3>Weekly calendar</h3>
+              <div class="calendar-grid">
+                <div class="calendar-slot"><strong>Mon</strong></div>
+                <div class="calendar-slot"><strong>Tue</strong></div>
+                <div class="calendar-slot"><strong>Wed</strong></div>
+                <div class="calendar-slot"><strong>Thu</strong></div>
+                <div class="calendar-slot"><strong>Fri</strong></div>
+                <div class="calendar-slot"><strong>Sat</strong></div>
+                <div class="calendar-slot"><strong>Sun</strong></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="delivery" class="section">
+          <h2 class="section-title">Delivery tracking timeline</h2>
+          <div class="card timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div>
+                <strong>Order confirmed</strong>
+                <p class="muted">Sunday, 9:10am</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div>
+                <strong>Ingredients sourced</strong>
+                <p class="muted">Monday, 7:45am</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div>
+                <strong>Box packed</strong>
+                <p class="muted">Tuesday, 1:10pm</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div>
+                <strong>Out for delivery</strong>
+                <p class="muted">Wednesday, 8:00am</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="history" class="section">
+          <h2 class="section-title">Order history</h2>
+          <div class="card">
+            <table class="responsive-table">
+              <tr>
+                <th>Week</th>
+                <th>Meals</th>
+                <th>Status</th>
+                <th>Invoice</th>
+              </tr>
+              <tr>
+                <td>Jan 08 - Jan 14</td>
+                <td>4 meals</td>
+                <td>Delivered</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>Jan 15 - Jan 21</td>
+                <td>4 meals</td>
+                <td>Delivered</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>Jan 22 - Jan 28</td>
+                <td>4 meals</td>
+                <td>Processing</td>
+                <td><a href="#">View</a></td>
+              </tr>
+            </table>
+          </div>
+        </section>
+
+        <section id="payment" class="section">
+          <h2 class="section-title">Payment & subscription</h2>
+          <div class="grid grid-2">
+            <div class="card">
+              <h3>Payment method</h3>
+              <p class="muted">Visa ending in 2204</p>
+              <button class="btn btn-outline">Update card</button>
+            </div>
+            <div class="card">
+              <h3>Subscription</h3>
+              <p class="muted">Plan: 4-Person Family · Weekly</p>
+              <button class="btn btn-primary">Manage subscription</button>
+            </div>
+          </div>
+        </section>
+
+        <section id="preferences" class="section">
+          <h2 class="section-title">Dietary preferences</h2>
+          <div class="card">
+            <div class="pill-list">
+              <span class="pill">No peanuts</span>
+              <span class="pill">Low sodium</span>
+              <span class="pill orange">High protein</span>
+            </div>
+            <button class="btn btn-outline" style="margin-top: 12px">
+              Update preferences
+            </button>
+          </div>
+        </section>
+
+        <section id="profile" class="section">
+          <h2 class="section-title">Profile settings</h2>
+          <div class="card form-grid">
+            <input class="input" type="text" value="Jordan Lee" />
+            <input class="input" type="email" value="jordan@freshplate.com" />
+            <input class="input" type="text" value="123 Greenway Ave, Seattle" />
+            <button class="btn btn-primary" type="button">Save updates</button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

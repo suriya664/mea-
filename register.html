@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshPlate | Register</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="auth-page">
+    <div class="auth-card" style="width: min(520px, 100%)">
+      <div class="icon-row" style="justify-content: space-between">
+        <span class="logo">FreshPlate</span>
+        <button class="theme-toggle" type="button" data-theme-toggle>Dark Mode</button>
+      </div>
+      <h2 class="section-title">Create your account</h2>
+      <p class="muted">Complete the steps to personalize your plan.</p>
+      <div class="progress">
+        <div class="progress-step active"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+      </div>
+      <form class="form-grid">
+        <div data-step>
+          <h3>1. Account information</h3>
+          <input class="input" type="text" placeholder="Full name" />
+          <input class="input" type="email" placeholder="Email address" />
+          <input class="input" type="password" placeholder="Create password" />
+          <button class="btn btn-primary" type="button" data-next>Next</button>
+        </div>
+        <div data-step>
+          <h3>2. Dietary preferences</h3>
+          <label><input type="checkbox" /> Vegetarian</label>
+          <label><input type="checkbox" /> Keto</label>
+          <label><input type="checkbox" /> Gluten-free</label>
+          <label><input type="checkbox" /> Dairy-free</label>
+          <div class="icon-row">
+            <button class="btn btn-outline" type="button" data-prev>
+              Back
+            </button>
+            <button class="btn btn-primary" type="button" data-next>
+              Next
+            </button>
+          </div>
+        </div>
+        <div data-step>
+          <h3>3. Delivery address</h3>
+          <input class="input" type="text" placeholder="Street address" />
+          <input class="input" type="text" placeholder="City" />
+          <input class="input" type="text" placeholder="ZIP / Postal code" />
+          <div class="icon-row">
+            <button class="btn btn-outline" type="button" data-prev>
+              Back
+            </button>
+            <button class="btn btn-primary" type="submit">
+              Create account
+            </button>
+          </div>
+        </div>
+      </form>
+      <p class="muted" style="margin-top: 16px">
+        Already have an account? <a href="login.html">Log in</a>
+      </p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

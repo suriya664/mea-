@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FreshPlate | Contact</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -20,7 +21,7 @@
           <a href="pricing.html">Pricing</a>
           <a href="blog.html">Blog</a>
           <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <a class="active" href="contact.html">Contact</a>
           <a href="dashboard.html">Dashboard</a>
           <button class="theme-toggle" type="button" data-theme-toggle>Dark Mode</button>
           <a class="btn btn-outline" href="login.html">Login</a>
@@ -56,17 +57,20 @@
       <div class="container grid grid-2">
         <div class="card">
           <h3>FAQ</h3>
-          <p class="muted">
-            <strong>How fast is support?</strong> We reply within 2 hours.
-          </p>
-          <p class="muted">
-            <strong>Need to skip a week?</strong> Manage deliveries in your
-            dashboard.
-          </p>
-          <p class="muted">
-            <strong>Allergen info?</strong> Ingredient cards include full
-            allergens.
-          </p>
+          <div class="faq">
+            <details>
+              <summary>How fast is support?</summary>
+              <p class="muted">We reply within 2 hours via chat or email.</p>
+            </details>
+            <details>
+              <summary>Need to skip a week?</summary>
+              <p class="muted">Manage deliveries and skips inside your dashboard.</p>
+            </details>
+            <details>
+              <summary>Allergen info?</summary>
+              <p class="muted">Ingredient cards include full allergen details.</p>
+            </details>
+          </div>
         </div>
         <div class="card chat-widget">
           <h3>Live chat</h3>
@@ -79,34 +83,60 @@
     </section>
 
     <section class="section">
-      <div class="container card">
-        <h3>Contact details</h3>
-        <p class="muted">hello@freshplate.com</p>
-        <p class="muted">1-800-FRESH-PLATE</p>
-        <p class="muted">Support hours: Mon-Sat, 8am-8pm</p>
+      <div class="container">
+        <h3 class="section-title">Contact details</h3>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <strong>Email</strong>
+            <span class="muted">hello@freshplate.com</span>
+          </div>
+          <div class="contact-card">
+            <strong>Phone</strong>
+            <span class="muted">1-800-FRESH-PLATE</span>
+          </div>
+          <div class="contact-card">
+            <strong>Support hours</strong>
+            <span class="muted">Mon-Sat, 8am-8pm</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <footer class="footer">
       <div class="container footer-columns">
         <div>
-          <h4>FreshPlate</h4>
-          <p class="muted">Fresh, healthy meal kits delivered weekly.</p>
+          <a class="logo footer-logo" href="index.html">FreshPlate</a>
+          <p class="muted">
+            Fresh, healthy meal kits delivered with zero stress.
+          </p>
+          <div class="footer-social">
+            <a class="social-icon" href="#" aria-label="Instagram">IG</a>
+            <a class="social-icon" href="#" aria-label="Facebook">FB</a>
+            <a class="social-icon" href="#" aria-label="X">X</a>
+            <a class="social-icon" href="#" aria-label="YouTube">YT</a>
+          </div>
         </div>
         <div>
           <h4>Explore</h4>
           <p class="muted"><a href="services.html">Meal plans</a></p>
           <p class="muted"><a href="blog.html">Blog</a></p>
+          <p class="muted"><a href="pricing.html">Pricing</a></p>
         </div>
         <div>
           <h4>Company</h4>
           <p class="muted"><a href="about.html">About</a></p>
-          <p class="muted"><a href="pricing.html">Pricing</a></p>
+          <p class="muted"><a href="contact.html">Contact</a></p>
+          <p class="muted"><a href="dashboard.html">Dashboard</a></p>
         </div>
         <div>
           <h4>Support</h4>
-          <p class="muted">support@freshplate.com</p>
+          <p class="muted">hello@freshplate.com</p>
+          <p class="muted">Mon-Sat 8am-8pm</p>
         </div>
+      </div>
+      <div class="container footer-bottom">
+        <p class="muted">© 2026 FreshPlate. All rights reserved.</p>
+        <p class="muted">Fresh, healthy, and eco-conscious meal kits.</p>
       </div>
     </footer>
     <script src="app.js"></script>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FreshPlate | Meal Plans</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -16,7 +17,7 @@
         <nav class="nav-links" id="site-menu">
           <a href="index.html">Home</a>
           <a href="home-recipes.html">Home 2</a>
-          <a href="services.html">Meal Plans</a>
+          <a class="active" href="services.html">Meal Plans</a>
           <a href="pricing.html">Pricing</a>
           <a href="blog.html">Blog</a>
           <a href="about.html">About</a>
@@ -33,36 +34,76 @@
       <div class="container">
         <h2 class="section-title">Meal plans overview</h2>
         <p class="section-subtitle">
-          Choose a plan tailored to your dietary goals.
+          Choose a plan tailored to your dietary goals and schedule.
         </p>
-        <div class="grid grid-4">
-          <div class="card">
-            <h3>Vegetarian</h3>
-            <p class="muted">Plant-forward dishes with bold flavors.</p>
-            <a class="btn btn-outline" href="service-details.html"
-              >View plan</a
-            >
+        <div class="grid grid-2">
+          <div class="card plan-card">
+            <img
+              src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=900&q=80"
+              alt="Vegetarian meal plan"
+            />
+            <div>
+              <h3>Vegetarian</h3>
+              <p class="muted">
+                Plant-forward bowls with seasonal veggies and bold spices.
+              </p>
+              <div class="plan-features">
+                <span class="muted">12-18g protein per serving</span>
+                <span class="muted">20 minute prep average</span>
+              </div>
+              <a class="btn btn-outline" href="service-details.html">View plan</a>
+            </div>
           </div>
-          <div class="card">
-            <h3>Keto</h3>
-            <p class="muted">Low-carb meals rich in healthy fats.</p>
-            <a class="btn btn-outline" href="service-details.html"
-              >View plan</a
-            >
+          <div class="card plan-card">
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80"
+              alt="Keto meal plan"
+            />
+            <div>
+              <h3>Keto</h3>
+              <p class="muted">
+                Low-carb meals with healthy fats and satisfying proteins.
+              </p>
+              <div class="plan-features">
+                <span class="muted">Under 20g net carbs</span>
+                <span class="muted">30-40g protein</span>
+              </div>
+              <a class="btn btn-outline" href="service-details.html">View plan</a>
+            </div>
           </div>
-          <div class="card">
-            <h3>Family</h3>
-            <p class="muted">Kid-friendly dinners in 25 minutes.</p>
-            <a class="btn btn-outline" href="service-details.html"
-              >View plan</a
-            >
+          <div class="card plan-card">
+            <img
+              src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=900&q=80"
+              alt="Family meal plan"
+            />
+            <div>
+              <h3>Family</h3>
+              <p class="muted">
+                Kid-approved favorites with hearty portions for four.
+              </p>
+              <div class="plan-features">
+                <span class="muted">25 minute cook time</span>
+                <span class="muted">Balanced nutrition</span>
+              </div>
+              <a class="btn btn-outline" href="service-details.html">View plan</a>
+            </div>
           </div>
-          <div class="card">
-            <h3>Paleo</h3>
-            <p class="muted">Clean ingredients with protein focus.</p>
-            <a class="btn btn-outline" href="service-details.html"
-              >View plan</a
-            >
+          <div class="card plan-card">
+            <img
+              src="https://images.unsplash.com/photo-1546069901-eacef0df6022?auto=format&fit=crop&w=900&q=80"
+              alt="Paleo meal plan"
+            />
+            <div>
+              <h3>Paleo</h3>
+              <p class="muted">
+                Clean ingredients and lean proteins for focused nutrition.
+              </p>
+              <div class="plan-features">
+                <span class="muted">Whole-food focused</span>
+                <span class="muted">No refined grains</span>
+              </div>
+              <a class="btn btn-outline" href="service-details.html">View plan</a>
+            </div>
           </div>
         </div>
       </div>
@@ -97,26 +138,87 @@
       </div>
     </section>
 
+    <section class="section">
+      <div class="container grid grid-2">
+        <div class="card">
+          <h3>Delivery timeline</h3>
+          <p class="muted">
+            From fresh sourcing to doorstep delivery in 3 days or less.
+          </p>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div>
+                <strong>Order confirmed</strong>
+                <p class="muted">Immediately after selection</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div>
+                <strong>Ingredients packed</strong>
+                <p class="muted">Within 24 hours</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div>
+                <strong>Out for delivery</strong>
+                <p class="muted">On your scheduled day</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Delivery preferences</h3>
+          <p class="muted">
+            Choose drop-off instructions and update delivery windows anytime.
+          </p>
+          <div class="pill-list">
+            <span class="pill">Doorstep drop</span>
+            <span class="pill">Office delivery</span>
+            <span class="pill orange">Vacation skip</span>
+            <span class="pill">SMS alerts</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="container footer-columns">
         <div>
-          <h4>FreshPlate</h4>
-          <p class="muted">Fresh meal kits delivered weekly.</p>
+          <a class="logo footer-logo" href="index.html">FreshPlate</a>
+          <p class="muted">
+            Fresh, healthy meal kits delivered with zero stress.
+          </p>
+          <div class="footer-social">
+            <a class="social-icon" href="#" aria-label="Instagram">IG</a>
+            <a class="social-icon" href="#" aria-label="Facebook">FB</a>
+            <a class="social-icon" href="#" aria-label="X">X</a>
+            <a class="social-icon" href="#" aria-label="YouTube">YT</a>
+          </div>
         </div>
         <div>
           <h4>Explore</h4>
-          <p class="muted"><a href="pricing.html">Pricing</a></p>
+          <p class="muted"><a href="services.html">Meal plans</a></p>
           <p class="muted"><a href="blog.html">Blog</a></p>
+          <p class="muted"><a href="pricing.html">Pricing</a></p>
         </div>
         <div>
           <h4>Company</h4>
           <p class="muted"><a href="about.html">About</a></p>
           <p class="muted"><a href="contact.html">Contact</a></p>
+          <p class="muted"><a href="dashboard.html">Dashboard</a></p>
         </div>
         <div>
           <h4>Support</h4>
-          <p class="muted">help@freshplate.com</p>
+          <p class="muted">hello@freshplate.com</p>
+          <p class="muted">Mon-Sat 8am-8pm</p>
         </div>
+      </div>
+      <div class="container footer-bottom">
+        <p class="muted">© 2026 FreshPlate. All rights reserved.</p>
+        <p class="muted">Fresh, healthy, and eco-conscious meal kits.</p>
       </div>
     </footer>
     <script src="app.js"></script>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FreshPlate | Fresh Meals. Zero Stress.</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -14,7 +15,7 @@
           ☰ Menu
         </button>
         <nav class="nav-links" id="site-menu">
-          <a href="index.html">Home</a>
+          <a class="active" href="index.html">Home</a>
           <a href="home-recipes.html">Home 2</a>
           <a href="services.html">Meal Plans</a>
           <a href="pricing.html">Pricing</a>
@@ -93,6 +94,35 @@
     </section>
 
     <section class="section">
+      <div class="container grid grid-2">
+        <div class="card">
+          <h3>Delivery schedule</h3>
+          <p class="muted">
+            Choose a delivery day that fits your routine. Real-time tracking
+            keeps you updated from kitchen to doorstep.
+          </p>
+          <ul class="muted">
+            <li>Weekly drop-offs in insulated, reusable packaging</li>
+            <li>Same-day SMS + email alerts</li>
+            <li>Flexible reschedule up to 24 hours prior</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Delivery coverage</h3>
+          <p class="muted">
+            Currently delivering across major metro areas with weekly routes.
+          </p>
+          <div class="pill-list">
+            <span class="pill">West Coast</span>
+            <span class="pill">Central</span>
+            <span class="pill orange">East Coast</span>
+            <span class="pill">Expanding soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="container">
         <h2 class="section-title">Subscription plans preview</h2>
         <p class="section-subtitle">Flexible plans that match your schedule.</p>
@@ -161,10 +191,16 @@
     <footer class="footer">
       <div class="container footer-columns">
         <div>
-          <h4>FreshPlate</h4>
+          <a class="logo footer-logo" href="index.html">FreshPlate</a>
           <p class="muted">
             Fresh, healthy meal kits delivered with zero stress.
           </p>
+          <div class="footer-social">
+            <a class="social-icon" href="#" aria-label="Instagram">IG</a>
+            <a class="social-icon" href="#" aria-label="Facebook">FB</a>
+            <a class="social-icon" href="#" aria-label="X">X</a>
+            <a class="social-icon" href="#" aria-label="YouTube">YT</a>
+          </div>
         </div>
         <div>
           <h4>Explore</h4>
@@ -179,10 +215,14 @@
           <p class="muted"><a href="dashboard.html">Dashboard</a></p>
         </div>
         <div>
-          <h4>Stay connected</h4>
+          <h4>Support</h4>
           <p class="muted">hello@freshplate.com</p>
           <p class="muted">Mon-Sat 8am-8pm</p>
         </div>
+      </div>
+      <div class="container footer-bottom">
+        <p class="muted">© 2026 FreshPlate. All rights reserved.</p>
+        <p class="muted">Fresh, healthy, and eco-conscious meal kits.</p>
       </div>
     </footer>
     <script src="app.js"></script>

@@ -108,7 +108,7 @@ ready(() => {
     const applyTheme = (isDark) => {
       document.body.classList.toggle("dark-theme", isDark);
       themeToggles.forEach((btn) => {
-        btn.textContent = isDark ? "Light Mode" : "Dark Mode";
+        btn.textContent = isDark ? "☀️" : "🌙";
         btn.setAttribute("aria-pressed", isDark ? "true" : "false");
       });
     };

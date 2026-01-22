@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FreshPlate | Blog</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -18,7 +19,7 @@
           <a href="home-recipes.html">Home 2</a>
           <a href="services.html">Meal Plans</a>
           <a href="pricing.html">Pricing</a>
-          <a href="blog.html">Blog</a>
+          <a class="active" href="blog.html">Blog</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
           <a href="dashboard.html">Dashboard</a>
@@ -47,7 +48,10 @@
           </div>
         </div>
         <div class="grid grid-3" style="margin-top: 24px">
-          <article class="card">
+          <article
+            class="card card-image"
+            style="background-image: url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?auto=format&fit=crop&w=900&q=80')"
+          >
             <span class="badge">5 min read</span>
             <h3>10 Weeknight Recipes Under 25 Minutes</h3>
             <p class="muted">Quick meals to keep you energized.</p>
@@ -55,9 +59,12 @@
               <span class="pill">Recipe Ideas</span>
               <span class="pill orange">Family</span>
             </div>
-            <a class="btn btn-outline" href="blog-detail.html">Read</a>
+            <a class="btn" href="blog-detail.html">Read More</a>
           </article>
-          <article class="card">
+          <article
+            class="card card-image"
+            style="background-image: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80')"
+          >
             <span class="badge">7 min read</span>
             <h3>How to Meal Prep Like a Pro</h3>
             <p class="muted">Simple routines that save hours.</p>
@@ -65,9 +72,12 @@
               <span class="pill">Cooking Tips</span>
               <span class="pill">Beginner</span>
             </div>
-            <a class="btn btn-outline" href="blog-detail.html">Read</a>
+            <a class="btn" href="blog-detail.html">Read More</a>
           </article>
-          <article class="card">
+          <article
+            class="card card-image"
+            style="background-image: url('https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=900&q=80')"
+          >
             <span class="badge">6 min read</span>
             <h3>Macros Explained: Fueling Fitness Goals</h3>
             <p class="muted">Balance carbs, protein, and fats.</p>
@@ -75,9 +85,12 @@
               <span class="pill">Nutrition</span>
               <span class="pill orange">Fitness</span>
             </div>
-            <a class="btn btn-outline" href="blog-detail.html">Read</a>
+            <a class="btn" href="blog-detail.html">Read More</a>
           </article>
-          <article class="card">
+          <article
+            class="card card-image"
+            style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80')"
+          >
             <span class="badge">4 min read</span>
             <h3>Vegan Protein Sources You’ll Love</h3>
             <p class="muted">Plant-based protein ideas.</p>
@@ -85,9 +98,12 @@
               <span class="pill">Recipe Ideas</span>
               <span class="pill">Vegan</span>
             </div>
-            <a class="btn btn-outline" href="blog-detail.html">Read</a>
+            <a class="btn" href="blog-detail.html">Read More</a>
           </article>
-          <article class="card">
+          <article
+            class="card card-image"
+            style="background-image: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80')"
+          >
             <span class="badge">5 min read</span>
             <h3>Low-Carb Snacks for Busy Days</h3>
             <p class="muted">Stay fueled between meetings.</p>
@@ -95,9 +111,12 @@
               <span class="pill">Keto</span>
               <span class="pill orange">Snack</span>
             </div>
-            <a class="btn btn-outline" href="blog-detail.html">Read</a>
+            <a class="btn" href="blog-detail.html">Read More</a>
           </article>
-          <article class="card">
+          <article
+            class="card card-image"
+            style="background-image: url('https://images.unsplash.com/photo-1546069901-eacef0df6022?auto=format&fit=crop&w=900&q=80')"
+          >
             <span class="badge">8 min read</span>
             <h3>Building a Balanced Plate</h3>
             <p class="muted">Nutrition basics for beginners.</p>
@@ -105,7 +124,7 @@
               <span class="pill">Nutrition</span>
               <span class="pill">Beginner</span>
             </div>
-            <a class="btn btn-outline" href="blog-detail.html">Read</a>
+            <a class="btn" href="blog-detail.html">Read More</a>
           </article>
         </div>
       </div>
@@ -114,23 +133,38 @@
     <footer class="footer">
       <div class="container footer-columns">
         <div>
-          <h4>FreshPlate</h4>
-          <p class="muted">Fresh meals and smarter cooking.</p>
+          <a class="logo footer-logo" href="index.html">FreshPlate</a>
+          <p class="muted">
+            Fresh, healthy meal kits delivered with zero stress.
+          </p>
+          <div class="footer-social">
+            <a class="social-icon" href="#" aria-label="Instagram">IG</a>
+            <a class="social-icon" href="#" aria-label="Facebook">FB</a>
+            <a class="social-icon" href="#" aria-label="X">X</a>
+            <a class="social-icon" href="#" aria-label="YouTube">YT</a>
+          </div>
         </div>
         <div>
           <h4>Explore</h4>
           <p class="muted"><a href="services.html">Meal plans</a></p>
+          <p class="muted"><a href="blog.html">Blog</a></p>
           <p class="muted"><a href="pricing.html">Pricing</a></p>
         </div>
         <div>
           <h4>Company</h4>
           <p class="muted"><a href="about.html">About</a></p>
           <p class="muted"><a href="contact.html">Contact</a></p>
+          <p class="muted"><a href="dashboard.html">Dashboard</a></p>
         </div>
         <div>
           <h4>Support</h4>
-          <p class="muted">support@freshplate.com</p>
+          <p class="muted">hello@freshplate.com</p>
+          <p class="muted">Mon-Sat 8am-8pm</p>
         </div>
+      </div>
+      <div class="container footer-bottom">
+        <p class="muted">© 2026 FreshPlate. All rights reserved.</p>
+        <p class="muted">Fresh, healthy, and eco-conscious meal kits.</p>
       </div>
     </footer>
     <script src="app.js"></script>

@@ -11,7 +11,6 @@
     <div class="auth-card" style="width: min(520px, 100%)">
       <div class="auth-header">
         <a class="logo auth-logo" href="index.html">FreshPlate</a>
-        <button class="theme-toggle" type="button" data-theme-toggle>Dark Mode</button>
       </div>
       <h2 class="section-title">Create your account</h2>
       <p class="muted">Complete the steps to personalize your plan.</p>
@@ -23,18 +22,20 @@
       <form class="form-grid">
         <div data-step>
           <h3>1. Account information</h3>
-          <input class="input" type="text" placeholder="Full name" />
-          <input class="input" type="email" placeholder="Email address" />
-          <input class="input" type="password" placeholder="Create password" />
-          <button class="btn btn-primary" type="button" data-next>Next</button>
+          <input class="input" type="text" placeholder="Full name" style="margin-bottom: 16px;" />
+          <input class="input" type="email" placeholder="Email address" style="margin-bottom: 16px;" />
+          <input class="input" type="password" placeholder="Create password" style="margin-bottom: 16px;" />
+          <button class="btn btn-primary" type="button" data-next style="margin: 0 auto; display: block;">Next</button>
         </div>
         <div data-step>
           <h3>2. Dietary preferences</h3>
-          <label><input type="checkbox" /> Vegetarian</label>
-          <label><input type="checkbox" /> Keto</label>
-          <label><input type="checkbox" /> Gluten-free</label>
-          <label><input type="checkbox" /> Dairy-free</label>
-          <div class="icon-row">
+          <div class="checkbox-group">
+            <label><input type="checkbox" /> Vegetarian</label>
+            <label><input type="checkbox" /> Keto</label>
+            <label><input type="checkbox" /> Gluten-free</label>
+            <label><input type="checkbox" /> Dairy-free</label>
+          </div>
+          <div class="icon-row" style="justify-content: center; margin-top: 20px;">
             <button class="btn btn-outline" type="button" data-prev>
               Back
             </button>
@@ -45,10 +46,10 @@
         </div>
         <div data-step>
           <h3>3. Delivery address</h3>
-          <input class="input" type="text" placeholder="Street address" />
-          <input class="input" type="text" placeholder="City" />
-          <input class="input" type="text" placeholder="ZIP / Postal code" />
-          <div class="icon-row">
+          <input class="input" type="text" placeholder="Street address" style="margin-bottom: 16px;" />
+          <input class="input" type="text" placeholder="City" style="margin-bottom: 16px;" />
+          <input class="input" type="text" placeholder="ZIP / Postal code" style="margin-bottom: 16px;" />
+          <div class="icon-row" style="justify-content: center; margin-top: 20px;">
             <button class="btn btn-outline" type="button" data-prev>
               Back
             </button>
@@ -61,6 +62,38 @@
       <p class="muted" style="margin-top: 16px">
         Already have an account? <a href="login.html">Log in</a>
       </p>
+      
+      <div class="social-login">
+        <p class="muted">Or sign up with</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            Facebook
+          </a>
+          <a href="#" class="social-icon-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
+            </svg>
+            Instagram
+          </a>
+          <a href="#" class="social-icon-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            Google
+          </a>
+        </div>
+      </div>
+      
+      <div class="privacy-links">
+        <p class="muted">
+          By creating an account, you agree to our 
+          <a href="#" class="privacy-link">Privacy Policy</a> and 
+          <a href="#" class="privacy-link">Terms of Service</a>
+        </p>
+      </div>
     </div>
     <script src="app.js"></script>
   </body>

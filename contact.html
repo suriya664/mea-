@@ -1,118 +1,179 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FreshPlate | Contact</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body class="contact-page">
-    <header class="site-header">
-      <div class="container nav">
-        <a class="logo" href="index.html">FreshPlate</a>
-        <button class="site-menu-toggle" type="button" data-site-menu-toggle data-target="#site-menu">
-          ☰
-        </button>
-        <nav class="nav-links" id="site-menu">
-          <a href="index.html">Home</a>
-          <a href="home-recipes.html">Home 2</a>
-          <a href="services.html">Meal Plans</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="blog.html">Blog</a>
-          <a href="about.html">About</a>
-          <a class="active" href="contact.html">Contact</a>
-          <a href="dashboard.html">Dashboard</a>
-          <button class="theme-toggle" type="button" data-theme-toggle>Dark Mode</button>
-          <a class="btn btn-outline" href="login.html">Login</a>
-          <a class="btn btn-outline" href="register.html">Register</a>
-        </nav>
-      </div>
-    </header>
-
-    <section class="section">
-      <div class="container grid grid-2">
-        <div class="card">
-          <h2 class="section-title">Customer support</h2>
-          <form class="form-grid">
-            <input class="input" type="text" placeholder="Full name" />
-            <input class="input" type="email" placeholder="Email address" />
-            <textarea class="input" rows="5" placeholder="How can we help?"></textarea>
-            <button class="btn btn-primary" type="submit">Send message</button>
-          </form>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>FreshPlate | Contact</title>
+      <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body class="contact-page">
+      <header class="site-header">
+        <div class="container nav">
+          <a class="logo" href="index.html">
+            <div class="logo-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6-2.69 6-6 6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2-.9 2-2 2-.9-2-2-2z"/>
+              </svg>
+            </div>
+            FreshPlate
+          </a>
+          <button class="site-menu-toggle" type="button" data-site-menu-toggle data-target="#site-menu">
+            ☰
+          </button>
+          <nav class="nav-links" id="site-menu">
+            <a href="index.html">Home</a>
+            <a href="home-recipes.html">Home 2</a>
+            <a href="services.html">Meal Plans</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a class="active" href="contact.html">Contact</a>
+            <a href="dashboard.html">Dashboard</a>
+            <button class="theme-toggle" type="button" data-theme-toggle>Dark Mode</button>
+            <a class="btn btn-outline" href="login.html">Login</a>
+            <a class="btn btn-outline" href="register.html">Register</a>
+          </nav>
         </div>
-        <div class="card">
-          <h2 class="section-title">Delivery inquiry</h2>
-          <form class="form-grid">
-            <input class="input" type="text" placeholder="ZIP / Postal code" />
-            <input class="input" type="text" placeholder="Preferred delivery day" />
-            <textarea class="input" rows="4" placeholder="Additional notes"></textarea>
-            <button class="btn btn-secondary" type="submit">Check delivery</button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container grid grid-2">
-        <div class="card">
-          <h3>FAQ</h3>
-          <div class="faq">
-            <details>
-              <summary>How fast is support?</summary>
-              <p class="muted">We reply within 2 hours via chat or email.</p>
-            </details>
-            <details>
-              <summary>Need to skip a week?</summary>
-              <p class="muted">Manage deliveries and skips inside your dashboard.</p>
-            </details>
-            <details>
-              <summary>Allergen info?</summary>
-              <p class="muted">Ingredient cards include full allergen details.</p>
-            </details>
-          </div>
-        </div>
-        <div class="card chat-widget">
-          <h3>Live chat</h3>
-          <p class="muted">
-            Chat with our support team Monday-Saturday, 8am-8pm.
-          </p>
-          <button class="btn btn-primary" type="button">Open Chat Widget</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h3 class="section-title">Contact details</h3>
-        <div class="contact-cards">
-          <div class="contact-card">
-            <strong>Email</strong>
-            <span class="muted">hello@freshplate.com</span>
-          </div>
-          <div class="contact-card">
-            <strong>Phone</strong>
-            <span class="muted">1-800-FRESH-PLATE</span>
-          </div>
-          <div class="contact-card">
-            <strong>Support hours</strong>
-            <span class="muted">Mon-Sat, 8am-8pm</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h3 class="section-title">Find us</h3>
-        <div class="grid grid-2">
+      </header>
+      
+      <section class="section">
+        <div class="container grid grid-2">
           <div class="card">
-            <h4>Headquarters</h4>
+            <h2 class="section-title">Customer support</h2>
+            <form class="form-grid">
+              <input class="input" type="text" placeholder="Full name" />
+              <input class="input" type="email" placeholder="Email address" />
+              <textarea class="input" rows="5" placeholder="How can we help?"></textarea>
+              <button class="btn btn-primary" type="submit">Send message</button>
+            </form>
+          </div>
+          <div class="card">
+            <h2 class="section-title">Delivery inquiry</h2>
+            <form class="form-grid">
+              <input class="input" type="text" placeholder="ZIP / Postal code" />
+              <input class="input" type="text" placeholder="Preferred delivery day" />
+              <textarea class="input" rows="4" placeholder="Additional notes"></textarea>
+              <button class="btn btn-secondary" type="submit">Check delivery</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container grid grid-2">
+          <div class="card">
+            <h3>FAQ</h3>
+            <div class="faq">
+              <details>
+                <summary>How fast is support?</summary>
+                <p class="muted">We reply within 2 hours via chat or email.</p>
+              </details>
+              <details>
+                <summary>Need to skip a week?</summary>
+                <p class="muted">Manage deliveries and skips inside your dashboard.</p>
+              </details>
+              <details>
+                <summary>Allergen info?</summary>
+                <p class="muted">Ingredient cards include full allergen details.</p>
+              </details>
+            </div>
+          </div>
+          <div class="card chat-widget">
+            <h3>Live chat</h3>
             <p class="muted">
-              FreshPlate HQ<br>
-              123 Green Street<br>
-              New York, NY 10001<br>
-              United States
+              Chat with our support team Monday-Saturday, 8am-8pm.
+            </p>
+            <button class="btn btn-primary" type="button">Open Chat Widget</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h3 class="section-title">Contact details</h3>
+          <div class="contact-cards">
+            <div class="contact-card">
+              <strong>Email</strong>
+              <span class="muted">hello@freshplate.com</span>
+            </div>
+            <div class="contact-card">
+              <strong>Phone</strong>
+              <span class="muted">1-800-FRESH-PLATE</span>
+            </div>
+            <div class="contact-card">
+              <strong>Support hours</strong>
+              <span class="muted">Mon-Sat, 8am-8pm</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h3 class="section-title">Find us</h3>
+          <div class="grid grid-2">
+            <div class="card">
+              <h4>Headquarters</h4>
+              <p class="muted">
+                FreshPlate HQ<br>
+                123 Green Street<br>
+                New York, NY 10001<br>
+                United States
+              </p>
+              <div class="footer-social">
+                <a class="social-icon" href="#" aria-label="Instagram">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
+                  </svg>
+                </a>
+                <a class="social-icon" href="#" aria-label="Facebook">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </a>
+                <a class="social-icon" href="#" aria-label="X">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                </a>
+                <a class="social-icon" href="#" aria-label="YouTube">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <h4>Location map</h4>
+              <div class="map-container">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095919355!2d-73.98689668459418!3d40.748440979330406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2593d6b4b4b5b%3A0x8b7b4b4b4b4b4b4b!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1234567890"
+                  width="100%" 
+                  height="250" 
+                  style="border:0; border-radius: var(--radius-md);" 
+                  allowfullscreen="" 
+                  loading="lazy">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container footer-columns">
+          <div>
+            <a class="logo footer-logo" href="index.html">
+              <div class="logo-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6-2.69 6-6 6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2-.9 2-2 2-.9-2-2-2z"/>
+                </svg>
+              </div>
+              FreshPlate
+            </a>
+            <p class="muted">
+              Fresh, healthy meal kits delivered with zero stress.
             </p>
             <div class="footer-social">
               <a class="social-icon" href="#" aria-label="Instagram">
@@ -137,83 +198,29 @@
               </a>
             </div>
           </div>
-          <div class="card">
-            <h4>Location map</h4>
-            <div class="map-container">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095919355!2d-73.98689668459418!3d40.748440979330406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2593d6b4b4b5b%3A0x8b7b4b4b4b4b4b4b!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1234567890"
-                width="100%" 
-                height="250" 
-                style="border:0; border-radius: var(--radius-md);" 
-                allowfullscreen="" 
-                loading="lazy">
-              </iframe>
-            </div>
+          <div>
+            <h4>Explore</h4>
+            <p class="muted"><a href="services.html">Meal plans</a></p>
+            <p class="muted"><a href="blog.html">Blog</a></p>
+            <p class="muted"><a href="pricing.html">Pricing</a></p>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <p class="muted"><a href="about.html">About</a></p>
+            <p class="muted"><a href="contact.html">Contact</a></p>
+            <p class="muted"><a href="dashboard.html">Dashboard</a></p>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <p class="muted">hello@freshplate.com</p>
+            <p class="muted">Mon-Sat 8am-8pm</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container footer-columns">
-        <div>
-          <a class="logo footer-logo" href="index.html">
-            <div class="logo-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6-2.69 6-6 6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2-.9 2-2 2-.9-2-2-2z"/>
-              </svg>
-            </div>
-            FreshPlate
-          </a>
-          <p class="muted">
-            Fresh, healthy meal kits delivered with zero stress.
-          </p>
-          <div class="footer-social">
-            <a class="social-icon" href="#" aria-label="Instagram">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
-              </svg>
-            </a>
-            <a class="social-icon" href="#" aria-label="Facebook">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-              </svg>
-            </a>
-            <a class="social-icon" href="#" aria-label="X">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-              </svg>
-            </a>
-            <a class="social-icon" href="#" aria-label="YouTube">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-              </svg>
-            </a>
-          </div>
+        <div class="container footer-bottom">
+          <p class="muted">© 2026 FreshPlate. All rights reserved.</p>
+          <p class="muted">Fresh, healthy, and eco-conscious meal kits.</p>
         </div>
-        <div>
-          <h4>Explore</h4>
-          <p class="muted"><a href="services.html">Meal plans</a></p>
-          <p class="muted"><a href="blog.html">Blog</a></p>
-          <p class="muted"><a href="pricing.html">Pricing</a></p>
-        </div>
-        <div>
-          <h4>Company</h4>
-          <p class="muted"><a href="about.html">About</a></p>
-          <p class="muted"><a href="contact.html">Contact</a></p>
-          <p class="muted"><a href="dashboard.html">Dashboard</a></p>
-        </div>
-        <div>
-          <h4>Support</h4>
-          <p class="muted">hello@freshplate.com</p>
-          <p class="muted">Mon-Sat 8am-8pm</p>
-        </div>
-      </div>
-      <div class="container footer-bottom">
-        <p class="muted">© 2026 FreshPlate. All rights reserved.</p>
-        <p class="muted">Fresh, healthy, and eco-conscious meal kits.</p>
-      </div>
-    </footer>
-    <script src="app.js"></script>
-  </body>
-</html>
+      </footer>
+      <script src="app.js"></script>
+    </body>
+  </html>

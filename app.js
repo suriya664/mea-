@@ -123,6 +123,26 @@ ready(() => {
     });
   }
 
+  const rtlToggles = document.querySelectorAll("[data-rtl-toggle]");
+  if (rtlToggles.length) {
+    const applyRTL = (isRTL) => {
+      document.documentElement.setAttribute("dir", isRTL ? "rtl" : "ltr");
+      rtlToggles.forEach((btn) => {
+        btn.classList.toggle("active", isRTL);
+        btn.setAttribute("aria-pressed", isRTL ? "true" : "false");
+      });
+    };
+    const stored = localStorage.getItem("freshplate-rtl");
+    applyRTL(stored === "true");
+    rtlToggles.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const isRTL = document.documentElement.getAttribute("dir") !== "rtl";
+        localStorage.setItem("freshplate-rtl", isRTL ? "true" : "false");
+        applyRTL(isRTL);
+      });
+    });
+  }
+
   const menuToggle = document.querySelector("[data-menu-toggle]");
   const menuPanel = document.querySelector("[data-menu-panel]");
   const menuClose = document.querySelector("[data-menu-close]");

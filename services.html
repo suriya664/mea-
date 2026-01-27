@@ -1,256 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FreshPlate | Meal Plans</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container nav">
-        <a class="logo" href="index.html">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshPlate | Meal Plans</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6-2.69 6-6 6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2-.9 2-2 2-.9-2-2-2z" />
+          </svg>
+        </div>
+        FreshPlate
+      </a>
+      <button class="site-menu-toggle" type="button" data-site-menu-toggle data-target="#site-menu">
+        ☰
+      </button>
+      <nav class="nav-links" id="site-menu">
+        <a href="index.html">Home</a>
+        <a href="home-recipes.html">Home 2</a>
+        <a class="active" href="services.html">Meal Plans</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-primary" href="dashboard.html">Dashboard</a>
+        <button class="theme-toggle" type="button" data-theme-toggle>🌙</button>
+        <button class="theme-toggle" type="button" data-rtl-toggle>🌐</button>
+        <a class="btn btn-outline" href="login.html">Login</a>
+        <a class="btn btn-outline" href="register.html">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Meal plans overview</h2>
+      <p class="section-subtitle">
+        Choose a plan tailored to your dietary goals and schedule.
+      </p>
+      <div class="grid grid-2">
+        <div class="card plan-card">
+          <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=900&q=80"
+            alt="Vegetarian meal plan" />
+          <div>
+            <h3>Vegetarian</h3>
+            <p class="muted">
+              Plant-forward bowls with seasonal veggies and bold spices.
+            </p>
+            <div class="plan-features">
+              <span class="muted">12-18g protein per serving</span>
+              <span class="muted">20 minute prep average</span>
+            </div>
+            <a class="btn btn-outline" href="service-details.html">View plan</a>
+          </div>
+        </div>
+        <div class="card plan-card">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80"
+            alt="Keto meal plan" />
+          <div>
+            <h3>Keto</h3>
+            <p class="muted">
+              Low-carb meals with healthy fats and satisfying proteins.
+            </p>
+            <div class="plan-features">
+              <span class="muted">Under 20g net carbs</span>
+              <span class="muted">30-40g protein</span>
+            </div>
+            <a class="btn btn-outline" href="service-details.html">View plan</a>
+          </div>
+        </div>
+        <div class="card plan-card">
+          <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=900&q=80"
+            alt="Family meal plan" />
+          <div>
+            <h3>Family</h3>
+            <p class="muted">
+              Kid-approved favorites with hearty portions for four.
+            </p>
+            <div class="plan-features">
+              <span class="muted">25 minute cook time</span>
+              <span class="muted">Balanced nutrition</span>
+            </div>
+            <a class="btn btn-outline" href="service-details.html">View plan</a>
+          </div>
+        </div>
+        <div class="card plan-card">
+          <img src="https://images.unsplash.com/photo-1546069901-eacef0df6022?auto=format&fit=crop&w=900&q=80"
+            alt="Paleo meal plan" />
+          <div>
+            <h3>Paleo</h3>
+            <p class="muted">
+              Clean ingredients and lean proteins for focused nutrition.
+            </p>
+            <div class="plan-features">
+              <span class="muted">Whole-food focused</span>
+              <span class="muted">No refined grains</span>
+            </div>
+            <a class="btn btn-outline" href="service-details.html">View plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid-2">
+      <div class="card">
+        <h3>Delivery areas</h3>
+        <p class="muted">
+          Currently delivering across major metro areas with weekly
+          drop-offs.
+        </p>
+        <ul class="muted">
+          <li>West Coast: Seattle, Portland, SF, LA</li>
+          <li>Central: Austin, Dallas, Denver, Chicago</li>
+          <li>East Coast: NYC, Boston, Atlanta, Miami</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Customization options</h3>
+        <div class="pill-list">
+          <span class="pill">Portion size</span>
+          <span class="pill orange">Dietary exclusions</span>
+          <span class="pill">Protein swaps</span>
+          <span class="pill">Extra veggies</span>
+        </div>
+        <p class="muted">
+          Tailor every box to allergies, preferences, and portion needs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid-2">
+      <div class="card">
+        <h3>Delivery timeline</h3>
+        <p class="muted">
+          From fresh sourcing to doorstep delivery in 3 days or less.
+        </p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div>
+              <strong>Order confirmed</strong>
+              <p class="muted">Immediately after selection</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div>
+              <strong>Ingredients packed</strong>
+              <p class="muted">Within 24 hours</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div>
+              <strong>Out for delivery</strong>
+              <p class="muted">On your scheduled day</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Delivery preferences</h3>
+        <p class="muted">
+          Choose drop-off instructions and update delivery windows anytime.
+        </p>
+        <div class="pill-list">
+          <span class="pill">Doorstep drop</span>
+          <span class="pill">Office delivery</span>
+          <span class="pill orange">Vacation skip</span>
+          <span class="pill">SMS alerts</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-columns">
+      <div>
+        <a class="logo footer-logo" href="index.html">
           <div class="logo-icon">
             <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6-2.69 6-6 6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2-.9 2-2 2-.9-2-2-2z"/>
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6-2.69 6-6 6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2-.9 2-2 2-.9-2-2-2z" />
             </svg>
           </div>
           FreshPlate
         </a>
-        <button class="site-menu-toggle" type="button" data-site-menu-toggle data-target="#site-menu">
-          ☰
-        </button>
-        <nav class="nav-links" id="site-menu">
-          <a href="index.html">Home</a>
-          <a href="home-recipes.html">Home 2</a>
-          <a class="active" href="services.html">Meal Plans</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="blog.html">Blog</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a href="dashboard.html">Dashboard</a>
-          <button class="theme-toggle" type="button" data-theme-toggle>Dark Mode</button>
-          <a class="btn btn-outline" href="login.html">Login</a>
-          <a class="btn btn-outline" href="register.html">Register</a>
-        </nav>
-      </div>
-    </header>
-
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">Meal plans overview</h2>
-        <p class="section-subtitle">
-          Choose a plan tailored to your dietary goals and schedule.
+        <p class="muted">
+          Fresh, healthy meal kits delivered with zero stress.
         </p>
-        <div class="grid grid-2">
-          <div class="card plan-card">
-            <img
-              src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=900&q=80"
-              alt="Vegetarian meal plan"
-            />
-            <div>
-              <h3>Vegetarian</h3>
-              <p class="muted">
-                Plant-forward bowls with seasonal veggies and bold spices.
-              </p>
-              <div class="plan-features">
-                <span class="muted">12-18g protein per serving</span>
-                <span class="muted">20 minute prep average</span>
-              </div>
-              <a class="btn btn-outline" href="service-details.html">View plan</a>
-            </div>
-          </div>
-          <div class="card plan-card">
-            <img
-              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80"
-              alt="Keto meal plan"
-            />
-            <div>
-              <h3>Keto</h3>
-              <p class="muted">
-                Low-carb meals with healthy fats and satisfying proteins.
-              </p>
-              <div class="plan-features">
-                <span class="muted">Under 20g net carbs</span>
-                <span class="muted">30-40g protein</span>
-              </div>
-              <a class="btn btn-outline" href="service-details.html">View plan</a>
-            </div>
-          </div>
-          <div class="card plan-card">
-            <img
-              src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=900&q=80"
-              alt="Family meal plan"
-            />
-            <div>
-              <h3>Family</h3>
-              <p class="muted">
-                Kid-approved favorites with hearty portions for four.
-              </p>
-              <div class="plan-features">
-                <span class="muted">25 minute cook time</span>
-                <span class="muted">Balanced nutrition</span>
-              </div>
-              <a class="btn btn-outline" href="service-details.html">View plan</a>
-            </div>
-          </div>
-          <div class="card plan-card">
-            <img
-              src="https://images.unsplash.com/photo-1546069901-eacef0df6022?auto=format&fit=crop&w=900&q=80"
-              alt="Paleo meal plan"
-            />
-            <div>
-              <h3>Paleo</h3>
-              <p class="muted">
-                Clean ingredients and lean proteins for focused nutrition.
-              </p>
-              <div class="plan-features">
-                <span class="muted">Whole-food focused</span>
-                <span class="muted">No refined grains</span>
-              </div>
-              <a class="btn btn-outline" href="service-details.html">View plan</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container grid grid-2">
-        <div class="card">
-          <h3>Delivery areas</h3>
-          <p class="muted">
-            Currently delivering across major metro areas with weekly
-            drop-offs.
-          </p>
-          <ul class="muted">
-            <li>West Coast: Seattle, Portland, SF, LA</li>
-            <li>Central: Austin, Dallas, Denver, Chicago</li>
-            <li>East Coast: NYC, Boston, Atlanta, Miami</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Customization options</h3>
-          <div class="pill-list">
-            <span class="pill">Portion size</span>
-            <span class="pill orange">Dietary exclusions</span>
-            <span class="pill">Protein swaps</span>
-            <span class="pill">Extra veggies</span>
-          </div>
-          <p class="muted">
-            Tailor every box to allergies, preferences, and portion needs.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container grid grid-2">
-        <div class="card">
-          <h3>Delivery timeline</h3>
-          <p class="muted">
-            From fresh sourcing to doorstep delivery in 3 days or less.
-          </p>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div>
-                <strong>Order confirmed</strong>
-                <p class="muted">Immediately after selection</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div>
-                <strong>Ingredients packed</strong>
-                <p class="muted">Within 24 hours</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div>
-                <strong>Out for delivery</strong>
-                <p class="muted">On your scheduled day</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <h3>Delivery preferences</h3>
-          <p class="muted">
-            Choose drop-off instructions and update delivery windows anytime.
-          </p>
-          <div class="pill-list">
-            <span class="pill">Doorstep drop</span>
-            <span class="pill">Office delivery</span>
-            <span class="pill orange">Vacation skip</span>
-            <span class="pill">SMS alerts</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container footer-columns">
-        <div>
-          <a class="logo footer-logo" href="index.html">
-            <div class="logo-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6-2.69 6-6 6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2-.9 2-2 2-.9-2-2-2z"/>
-              </svg>
-            </div>
-            FreshPlate
+        <div class="footer-social">
+          <a class="social-icon" href="#" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z" />
+            </svg>
           </a>
-          <p class="muted">
-            Fresh, healthy meal kits delivered with zero stress.
-          </p>
-          <div class="footer-social">
-            <a class="social-icon" href="#" aria-label="Instagram">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
-              </svg>
-            </a>
-            <a class="social-icon" href="#" aria-label="Facebook">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-              </svg>
-            </a>
-            <a class="social-icon" href="#" aria-label="X">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-              </svg>
-            </a>
-            <a class="social-icon" href="#" aria-label="YouTube">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div>
-          <h4>Explore</h4>
-          <p class="muted"><a href="services.html">Meal plans</a></p>
-          <p class="muted"><a href="blog.html">Blog</a></p>
-          <p class="muted"><a href="pricing.html">Pricing</a></p>
-        </div>
-        <div>
-          <h4>Company</h4>
-          <p class="muted"><a href="about.html">About</a></p>
-          <p class="muted"><a href="contact.html">Contact</a></p>
-          <p class="muted"><a href="dashboard.html">Dashboard</a></p>
-        </div>
-        <div>
-          <h4>Support</h4>
-          <p class="muted">hello@freshplate.com</p>
-          <p class="muted">Mon-Sat 8am-8pm</p>
+          <a class="social-icon" href="#" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </a>
+          <a class="social-icon" href="#" aria-label="X">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <a class="social-icon" href="#" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+          </a>
         </div>
       </div>
-      <div class="container footer-bottom">
-        <p class="muted">© 2026 FreshPlate. All rights reserved.</p>
-        <p class="muted">Fresh, healthy, and eco-conscious meal kits.</p>
+      <div>
+        <h4>Explore</h4>
+        <p class="muted"><a href="services.html">Meal plans</a></p>
+        <p class="muted"><a href="blog.html">Blog</a></p>
+        <p class="muted"><a href="pricing.html">Pricing</a></p>
       </div>
-    </footer>
-    <script src="app.js"></script>
-  </body>
+      <div>
+        <h4>Company</h4>
+        <p class="muted"><a href="about.html">About</a></p>
+        <p class="muted"><a href="contact.html">Contact</a></p>
+        <p class="muted"><a href="dashboard.html">Dashboard</a></p>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <p class="muted">hello@freshplate.com</p>
+        <p class="muted">Mon-Sat 8am-8pm</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="muted">© 2026 FreshPlate. All rights reserved.</p>
+      <p class="muted">Fresh, healthy, and eco-conscious meal kits.</p>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
 </html>

@@ -113,9 +113,11 @@ button {
   box-shadow: var(--shadow-soft);
 }
 
-.btn-small {
-  padding: 8px 16px;
-  font-size: 0.9rem;
+/* Ensure icon-row buttons use standard size */
+.icon-row .btn {
+  padding: 12px 20px !important;
+  font-size: 1rem !important;
+  min-height: auto !important;
 }
 
 /* Fix meal plans page alignment */
@@ -485,10 +487,13 @@ button {
 /* Card image styling */
 .card-image {
   width: 100%;
-  height: 200px;
+  height: 280px;
   border-radius: var(--radius-md) var(--radius-md) 0 0;
   overflow: hidden;
   margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-image img {
@@ -500,6 +505,72 @@ button {
 
 .card-image img:hover {
   transform: scale(1.05);
+}
+
+/* Mobile responsive for card images */
+@media (max-width: 768px) {
+  .card-image {
+    height: 280px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .card-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    max-width: 100% !important;
+    min-height: 280px !important;
+  }
+  
+  /* Improve card design for mobile */
+  .card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  .card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+  }
+  
+  .coverage-areas {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+    margin-top: 0.75rem;
+  }
+  
+  .coverage-item {
+    padding: 0.25rem;
+    text-align: center;
+  }
+  
+  /* Reduce grid gaps on mobile */
+  .grid.grid-2 {
+    gap: 1rem;
+  }
+  
+  .section {
+    padding: 1.5rem 1rem;
+  }
+  
+  /* Remove unnecessary margins */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 /* Coverage areas styling */

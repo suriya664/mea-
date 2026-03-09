@@ -54,14 +54,21 @@ button {
 
 .section-title {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: clamp(1.8rem, 2.5vw, 2.6rem);
-  margin: 0 0 12px;
+  font-weight: 700;
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  margin: 0 0 16px;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(135deg, #10b981, #059669);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .section-subtitle {
   color: var(--slate);
   margin: 0 0 36px;
+  font-size: 1.05rem;
 }
 
 /* Center subscription plans preview section title and subtitle */
@@ -83,6 +90,7 @@ button {
 /* General centering for all page headings and buttons */
 .section-title {
   text-align: center;
+  display: block;
 }
 
 .section-subtitle {
@@ -1003,12 +1011,6 @@ button {
 }
 
 /* Sections */
-.section-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #1f2937;
-  margin: 0 0 1.5rem 0;
-}
 
 .activity-section {
   background: white;
@@ -1720,7 +1722,10 @@ button {
 }
 
 .team-card {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 12px;
   padding: 16px;
   border-radius: var(--radius-md);
@@ -1734,6 +1739,12 @@ button {
   height: 72px;
   border-radius: 50%;
   object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.team-card div {
+  text-align: center;
 }
 
 .team-card .muted {
@@ -1852,6 +1863,24 @@ button {
   justify-content: center;
 }
 
+/* Center-align icon-row inside cards (Chef testimonials, Customer success stories) */
+.card .icon-row {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.card .icon-row img {
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.card .icon-row > div {
+  text-align: center;
+}
+
 .icon-card {
   display: flex;
   align-items: center;
@@ -1929,6 +1958,44 @@ button {
   font-size: 0.8rem;
   background: var(--white);
   box-shadow: var(--shadow-soft);
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icon:hover {
+  background: var(--fresh-green);
+  color: var(--white);
+  border-color: var(--fresh-green);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.35);
+}
+
+.social-icon:hover svg {
+  fill: var(--white);
+}
+
+/* Per-platform social icon hover colors */
+.social-icon[aria-label="Facebook"]:hover {
+  background: #1877f2;
+  border-color: #1877f2;
+  box-shadow: 0 6px 16px rgba(24, 119, 242, 0.35);
+}
+
+.social-icon[aria-label="X"]:hover {
+  background: #000;
+  border-color: #000;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.social-icon[aria-label="YouTube"]:hover {
+  background: #ff0000;
+  border-color: #ff0000;
+  box-shadow: 0 6px 16px rgba(255, 0, 0, 0.35);
+}
+
+.social-icon[aria-label="Instagram"]:hover {
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border-color: #dc2743;
+  box-shadow: 0 6px 16px rgba(220, 39, 67, 0.35);
 }
 
 .footer-bottom {
@@ -2238,12 +2305,47 @@ body.dark-theme .card,
 body.dark-theme .sidebar,
 body.dark-theme .footer,
 body.dark-theme .auth-card {
-  background: #111827;
+  background: #1e293b;
   color: #e2e8f0;
 }
 
+body.dark-theme .card h3,
+body.dark-theme .card h4,
+body.dark-theme .card p,
+body.dark-theme .card strong,
+body.dark-theme .card li {
+  color: #e2e8f0;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6 {
+  color: #f1f5f9;
+}
+
+body.dark-theme p,
+body.dark-theme li,
+body.dark-theme span,
+body.dark-theme label {
+  color: #cbd5e1;
+}
+
+body.dark-theme .section-title {
+  background: linear-gradient(135deg, #34d399, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+body.dark-theme .section-subtitle {
+  color: #b0bec5;
+}
+
 body.dark-theme .muted {
-  color: #94a3b8;
+  color: #c8d1db;
 }
 
 body.dark-theme .btn-outline,
@@ -2260,16 +2362,37 @@ body.dark-theme .site-menu-toggle {
   background: transparent;
 }
 
+body.dark-theme .nav-links a {
+  color: #cbd5e1;
+}
+
 body.dark-theme .nav-links a:hover {
   color: #f8fafc;
 }
 
 body.dark-theme .badge {
   background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
 }
 
 body.dark-theme .badge.orange {
   background: rgba(249, 115, 22, 0.2);
+  color: #fb923c;
+}
+
+body.dark-theme .pill {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+}
+
+body.dark-theme .pill.orange {
+  background: rgba(249, 115, 22, 0.2);
+  color: #fb923c;
+}
+
+body.dark-theme .tag {
+  background: rgba(148, 163, 184, 0.2);
+  color: #94a3b8;
 }
 
 body.dark-theme .toggle-group {
@@ -2277,8 +2400,13 @@ body.dark-theme .toggle-group {
   border-color: rgba(148, 163, 184, 0.35);
 }
 
+body.dark-theme .toggle-group button {
+  color: #cbd5e1;
+}
+
 body.dark-theme .toggle-group .active {
   background: #1f2937;
+  color: #f1f5f9;
 }
 
 body.dark-theme .calendar-slot {
@@ -2289,6 +2417,124 @@ body.dark-theme .calendar-slot {
 body.dark-theme .responsive-table th,
 body.dark-theme .responsive-table td {
   border-bottom-color: rgba(148, 163, 184, 0.2);
+  color: #e2e8f0;
+}
+
+body.dark-theme .footer h4,
+body.dark-theme .footer p,
+body.dark-theme .footer a {
+  color: #cbd5e1;
+}
+
+body.dark-theme .footer a:hover {
+  color: #34d399;
+}
+
+body.dark-theme .social-icon {
+  background: #1e293b;
+  border-color: rgba(148, 163, 184, 0.3);
+  color: #94a3b8;
+}
+
+body.dark-theme .social-icon svg {
+  fill: #94a3b8;
+}
+
+body.dark-theme .input {
+  background: #1e293b;
+  border-color: rgba(148, 163, 184, 0.3);
+  color: #e2e8f0;
+}
+
+body.dark-theme .faq details {
+  background: #1e293b;
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+body.dark-theme .faq summary {
+  color: #f1f5f9;
+}
+
+body.dark-theme .activity-item {
+  background: #0f172a;
+}
+
+body.dark-theme .activity-title {
+  color: #f1f5f9;
+}
+
+body.dark-theme .coverage-item {
+  background: #1e293b;
+}
+
+/* Enhanced dark mode text visibility */
+body.dark-theme .btn {
+  color: #f1f5f9;
+}
+
+body.dark-theme .btn-primary {
+  color: #ffffff;
+}
+
+body.dark-theme .btn-secondary {
+  color: #ffffff;
+}
+
+body.dark-theme a {
+  color: #cbd5e1;
+}
+
+body.dark-theme .card .muted,
+body.dark-theme .card .muted a {
+  color: #c8d1db;
+}
+
+body.dark-theme .footer .muted {
+  color: #b0bec5;
+}
+
+body.dark-theme .team-card strong {
+  color: #f1f5f9;
+}
+
+body.dark-theme .testimonial-card p {
+  color: #c8d1db;
+}
+
+body.dark-theme .plan-features span {
+  color: #cbd5e1;
+}
+
+body.dark-theme .contact-card p {
+  color: #c8d1db;
+}
+
+body.dark-theme .step-card p {
+  color: #c8d1db;
+}
+
+body.dark-theme .partner-card p {
+  color: #c8d1db;
+}
+
+body.dark-theme .hero p {
+  color: #c8d1db;
+}
+
+body.dark-theme .checkbox-label {
+  color: #cbd5e1;
+}
+
+body.dark-theme .forgot-password {
+  color: #34d399;
+}
+
+body.dark-theme .social-login p {
+  color: #94a3b8 !important;
+}
+
+body.dark-theme .privacy-link {
+  color: #34d399;
 }
 
 .tag {

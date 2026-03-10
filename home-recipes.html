@@ -27,10 +27,10 @@
       <nav class="nav-links" id="site-menu">
         <a href="index.html">Home</a>
         <a class="active" href="home-recipes.html">Home 2</a>
+        <a href="about.html">About</a>
         <a href="services.html">Meal Plans</a>
         <a href="pricing.html">Pricing</a>
         <a href="blog.html">Blog</a>
-        <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         <a class="btn btn-primary" href="dashboard.html">Dashboard</a>
         <button class="theme-toggle" type="button" data-theme-toggle>🌙</button>
@@ -137,12 +137,13 @@
           “FreshPlate lets me craft bold flavors with responsible sourcing
           and mindful nutrition.”
         </p>
-        <div class="icon-row">
+        <div
+          style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 8px;">
           <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=200&q=80"
             alt="Chef portrait" style="width: 64px; height: 64px; border-radius: 50%" />
           <div>
             <strong>Chef Alina Gomez</strong>
-            <p class="muted">Lead Nutrition Chef</p>
+            <p class="muted" style="margin: 0;">Lead Nutrition Chef</p>
           </div>
         </div>
       </div>
@@ -207,50 +208,20 @@
         <p class="muted">
           "FreshPlate helped me lose 15 pounds while enjoying delicious food!"
         </p>
-        <div class="icon-row">
+        <div
+          style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 8px;">
           <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=80"
             alt="Customer photo" style="width: 48px; height: 48px; border-radius: 50%" />
           <div>
             <strong>Sarah Mitchell</strong>
-            <p class="muted">Lost 15 lbs in 3 months</p>
+            <p class="muted" style="margin: 0;">Lost 15 lbs in 3 months</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Frequently asked questions</h2>
-      <p class="section-subtitle">Everything you need to know about FreshPlate.</p>
-      <div class="grid grid-2">
-        <div class="card">
-          <h4>How do I customize my meals?</h4>
-          <p class="muted">
-            Simply select your dietary preferences during signup and swap proteins or vegetables in each recipe.
-          </p>
-        </div>
-        <div class="card">
-          <h4>Can I skip weeks?</h4>
-          <p class="muted">
-            Yes! Pause or skip any week with just 24 hours notice through your dashboard.
-          </p>
-        </div>
-        <div class="card">
-          <h4>Is packaging recyclable?</h4>
-          <p class="muted">
-            All packaging is either recyclable or reusable. We offer free container return pickups.
-          </p>
-        </div>
-        <div class="card">
-          <h4>What if I have allergies?</h4>
-          <p class="muted">
-            We accommodate all common allergies. Cross-contamination prevention is our priority.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
 
   <section class="section">
@@ -363,7 +334,55 @@
 
     </div>
   </section>
-
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Frequently asked questions</h2>
+      <p class="section-subtitle">Everything you need to know about FreshPlate.</p>
+      
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question" data-accordion-toggle>
+            <span>How do I customize my meals?</span>
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <p class="muted">Simply select your dietary preferences during signup and swap proteins or vegetables in each recipe.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question" data-accordion-toggle>
+            <span>Can I skip weeks?</span>
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <p class="muted">Yes! Pause or skip any week with just 24 hours notice through your dashboard.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question" data-accordion-toggle>
+            <span>Is packaging recyclable?</span>
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <p class="muted">All packaging is either recyclable or reusable. We offer free container return pickups.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question" data-accordion-toggle>
+            <span>What if I have allergies?</span>
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <p class="muted">We accommodate all common allergies. Cross-contamination prevention is our priority.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container footer-columns">

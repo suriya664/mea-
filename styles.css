@@ -1504,19 +1504,18 @@ body.dark-theme.blog-page .card.card-image .btn {
 
 /* Center delivery timeline section */
 .timeline {
-  text-align: center;
+  display: flex !important;
+  flex-direction: column;
+  gap: 20px;
+  max-width: fit-content;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .timeline-item {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
   gap: 16px;
-  margin-bottom: 24px;
-  text-align: left;
-}
-
-.timeline-item>div {
   text-align: left;
 }
 
@@ -1526,6 +1525,7 @@ body.dark-theme.blog-page .card.card-image .btn {
   background: var(--fresh-green);
   border-radius: 50%;
   flex-shrink: 0;
+  margin-top: 6px;
 }
 
 .btn-primary {
@@ -2197,24 +2197,6 @@ body.dark-theme.blog-page .card.card-image .btn {
   box-shadow: var(--shadow-soft);
 }
 
-.timeline {
-  display: grid;
-  gap: 18px;
-}
-
-.timeline-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-.timeline-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  margin-top: 8px;
-  background: var(--fresh-green);
-}
 
 .dashboard {
   min-height: 100vh;
